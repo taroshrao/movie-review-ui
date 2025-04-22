@@ -8,7 +8,25 @@ import MovieCard from "@/components/MovieCard";
 export default function Home() {
   return (
     <main className="min-h-screen flex items-center justify-center bg-gray-100">
-      <MovieCard />
+      <h1>Movie List</h1>
+      <MovieCard 
+      movieName= "Zindagi Na Milegi Dobara"
+      moviePoster= "/assets/images/znmd.jpg"
+      movieReleaseYear= "15 July 2011"
+      Rating= {8.2}
+            />
+      <MovieCard 
+      movieName= "Chakh De India"
+      moviePoster= "/assets/images/chak-de-india.jpg"
+      movieReleaseYear= "10 Aug 2007"
+      Rating= {8.1}
+            />
+      <MovieCard 
+      movieName= "Kantara"
+      moviePoster= "/assets/images/kantara.jpg"
+      movieReleaseYear= "30 Sep 2022"
+      Rating= {8.2}
+            />
     </main>
   );
 }
